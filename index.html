@@ -1,0 +1,214 @@
+<html>
+<head>
+    <title></title>
+     <link rel="stylesheet" href="style.css">
+     <script src="main.js">
+    </script>
+                
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+     <style>
+         body{
+             background-image: url(pi.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;
+             padding: 10px;
+         }
+    
+        nav{
+    text-decoration: none;
+
+}
+ .navbar-inverse{
+            background:#4d4d00;
+            padding-right: 15px;
+            padding-left: 15px;
+           position: fixed;
+            top: 0;
+           
+            
+        }
+        .navbar-barand{
+            font-size: 35px;
+            font-weight: 500;
+            font-family: Times New Roman;
+            color:  #ff0066;
+            margin-right: 40px;
+            text-align: center;
+               text-decoration: none;
+        }
+        ul li{
+            
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin-right: 20px;
+            align-content: flex-end;}
+       .imag {
+             margin-bottom: 100px;
+             position: relative;
+             animation-name: example;
+             animation-duration: 10s;
+             animation-direction: reverse;
+         }
+         @keyframes example{
+             0%{ transform: rotate(45deg)}
+             20%{transform: rotate(90deg)}
+             40%{transform: rotate(135deg)}
+               60%{transform: rotate(170eg)}
+               80%{transform: rotate(215deg)}
+             100%{transform: rotate3d(360deg)}
+         }
+         .img1{
+             height: 300px;
+             width: 400px;
+             border-radius:10% 20% /30% 20%;
+         }
+         .img1:hover{
+             border-radius: 150px;
+             margin-top: 10px;
+             margin-bottom: 20px;
+             box-shadow: 10px 20px 30px 40px yellow;
+         }   
+         
+         #location{
+            margin-top: 50px;
+            background-color: black;
+            padding: 1px;
+        }   
+        #location p{
+            color: floralwhite;
+        }
+         .info{
+             display: flex;
+             justify-content: space-between;
+             padding: 0 20px;
+         }
+         .info p{
+             font-size: 20px;
+             line-height: 50px;
+         }
+         #box{
+             border: 5px double red;
+             overflow: scroll;
+             color: crimson;
+             padding-top: 1em;
+         }
+         .transition{
+             height: 300px;
+             width: 200px;
+             background-color: aqua;
+            transition: width 3s, height 3s;
+         }
+         .transition:hover{
+             border-radius: 100px;
+             height: 200px;
+             width: 300px;
+             
+         }
+         .box1{
+             border:5px solid black;
+             height: 300px;
+             width: 200px;
+             position: relative;
+             animation: example2 8s infinite alternate;
+                           
+         }
+         @keyframes example2{
+             0%{background-color: chartreuse;top: 0;}
+             25%{background-image: url(f.jpg);top: 0}
+             45%{background-image: url(gf.avif);top: 0}
+             65%{background-image: url(im1.jpg);top: 0}
+             85%{background-image: url(g.jpeg);top: 0}
+             100%{background-image: url(Apple.jpg);top: 0}
+         }
+            
+    </style>
+<body>
+      <nav class="navbar-inverse" style="position: sticky;top:0;z-index: 1000px">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                    
+                </button>
+                <a class="navbar-barand" href="#">Satish</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar" >
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#company" >Company</a></li>
+                    <li><a href="#Hotels">Hotels</a></li>
+                    <li><a href="#Tickets">Facilities</a></li>
+                    <li><a href="#location">Contact</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+    <section id=about>
+        <center>
+             <p style="color: brown; font-size: 20px; margin-top: 30px; text-align: justify"><b>Description:</b>
+iPhone 15 Pro Max, a titanium marvel, boasts an aerospace-grade build, making it the lightest Pro model ever. The A17 Pro Chip marks a historic leap in Apple GPUs, delivering unparalleled graphics performance and immersive gaming experiences. The camera system shines with a 48 MP Main camera, offering remarkable detail and automatic portrait enhancements. Convenience is key with the Action button for quick tasks and Focus filters. Plus, it's USB 3 compatible, revolutionizing data transfer speeds. This iPhone even shares its charging cab</p>
+        
+            <img class="imag" src= "im1.jpg" height="200px" width="200px">
+            <marquee>
+            <p1><b>Description:</b>
+iPhone 15 Pro Max, a titanium marvel, boasts an aerospace-grade build, making it the lightest Pro model ever. The A17 Pro Chip marks a historic leap in Apple GPUs, delivering unparalleled graphics performance and immersive gaming experiences. The camera system shines with a 48 MP Main camera, offering remarkable detail and automatic portrait enhancements. Convenience is key with the Action button for quick tasks and Focus filters. Plus, it's USB 3 compatible, revolutionizing data transfer speeds. This iPhone even shares its charging cab</p1></marquee>
+        <img class="img1" src="gf.avif">
+        
+        </center>
+    </section>
+    <section id=company>
+        <center>
+        <div class="shopping">
+            <h1>Shopping</h1>
+            <label>Items:</label>
+            <input type="text" placeholder="enter the item" id="value"><br><br>
+             </div>
+        <button onclick="add()" style="padding: 10px; border-radius: 15px; color: azure;background-color: black">click to addd</button><br><br> 
+            
+        <label id=label1></label></center>
+        
+    </section>
+    <section id=Hotels>
+        <center>
+        <h2 style="color: chartreuse;" id="hide">Click the button text will display or hide</h2><br>
+        <button onclick="display()" style="padding: 10px; border-radius: 15px; background-color:yellow; color: darkgreen; font-size: 20px;">Click here</button><br><br>
+        <p id="box">vgjvvchgasdfhsgffgjsgsgvgsfdqgdffffffffffffffffffffffffffffffffffgshdttttttttwyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyydddddddddddddddddddddddddddddddddddddddd<br>dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfv</p>
+            <h1>Change Images Css Animation</h1>
+            <div class="box1"></div>
+        </center>
+    </section>
+  <section id=Tickets>
+      <center>
+      <img src=Apple.jpg height="100px" width="100px" onclick="decrease()" style="margin-top: 40px; border-radius: 50px;">
+      <img src=Apple.jpg height="100px" width="100px" onclick="increase()" style="margin-top: 40px;border-radius: 50px;"><br>
+          <div>
+      <label>Score:</label></div>
+    <div id="b">0</div>
+          
+           <h1> Transition Effect </h1>
+          <div class="transition">
+          </div>
+      </center>
+      
+    </section>  
+    <section id="location">
+        <div class=fotter>
+        <div class=info>
+            <p>Email:satishsuravarapu084@gmail.com</p>
+            <p> Adrees:Amalapuram A.P</p>
+        </div>
+        <div class=info>
+            <p>Phone:9959394989</p>
+            <p>linkindn:satish suravarapu</p>
+        </div></div>
+    </section></body><html>
+   
+</html>
